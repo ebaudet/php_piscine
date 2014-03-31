@@ -1,0 +1,136 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/03/31 23:24:08 by ebaudet           #+#    #+#             */
+/*   Updated: 2014/04/01 00:40:29 by ebaudet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body {
+	background-color: #505050;
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 1420px;
+}
+.block {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 10px 10px 5px 0px #000000;
+-webkit-box-shadow: 10px 10px 5px 0px #000000;
+-o-box-shadow: 10px 10px 5px 0px #000000;
+box-shadow: 10px 10px 5px 0px #000000;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=5);
+}
+
+/****************
+*	HEADER 		*
+*****************/
+
+#header {
+	background-color: #909090;
+	height: 137px;
+	width: 1420px;
+	margin: 18px auto 20px;
+	position: relative;
+}
+
+#header img#day_42 {
+	margin: 10px;
+	height: 125px;
+}
+
+#header img.button {
+	width: 20px;
+	height: 20px;
+}
+
+#header img#loupe {
+	bottom: -28px;
+    position: absolute;
+    right: 20px;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#header a#reload {
+	position: absolute;
+	right: 8px;
+    top: 8px;
+}
+
+#header a#close {
+	position: absolute;
+	right: 8px;
+    bottom: 2px;
+}
+
+/****************
+*	MENU LEFT 	*
+*****************/
+
+#menu {
+	width: 140px;
+	height: 425px;
+	background-color: #909090;
+	float: left;
+	margin: 0 20px 0 25px;
+}
+#menu img {
+	margin: 6px 33px 0;
+    width: 70px;
+}
+
+/************************
+*	CONTENU CENTRAL 	*
+*************************/
+
+#content {
+	width: 1020px;
+	height: 582px;
+	background-color: #909090;
+	float: left;
+	margin: 0 10px;
+}
+
+#content img {
+	width: 1000px;
+	margin: 10px;
+}
+
+/****************
+*	MENU RIGHT 	*
+*****************/
+
+#info {
+	width: 140px;
+	height: 425px;
+	background-color: #909090;
+	float: left;
+	margin: 0 25px 0 20px;
+}
+
+#info img {
+	margin: 10px;
+	height: 125px;
+}
+
+/****************
+*	FORMULAIRE 	*
+*****************/
+
+#formulaire {
+	width: 520px;
+	height: 170px;
+	background-color: #88FF89;
+}
