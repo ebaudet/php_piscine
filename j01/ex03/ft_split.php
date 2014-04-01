@@ -14,7 +14,7 @@
 			if ($tab[$i] == "")
 				unset($tab[$i]);
 		}
-		array_merge($tab);
+		$tab = array_merge($tab);
 		sort($tab);
 		return $tab;
 	}
