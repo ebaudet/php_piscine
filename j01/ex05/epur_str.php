@@ -7,7 +7,7 @@
 		return $launch;
 	}
 
-	function ft_plit($string)
+	function ft_split($string)
 	{
 		$tab = multi_explode(array(" ", "\t", "\n"), $string);
 		for ($i = 0; isset($tab[$i]) ; $i++)
@@ -21,7 +21,7 @@
 
 	function epur_str($string)
 	{
-		$tab = ft_plit($string);
+		$tab = ft_split($string);
 		for ($i = 0; isset($tab[$i]); $i++)
 		{
 			if ($i != 0)
