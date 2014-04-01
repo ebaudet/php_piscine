@@ -22,7 +22,6 @@
 	function epur_str($string)
 	{
 		$tab = ft_plit($string);
-		print_r($tab);
 		for ($i = 0; isset($tab[$i]); $i++)
 		{
 			if ($i != 0)
