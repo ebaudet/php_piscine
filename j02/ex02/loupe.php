@@ -47,3 +47,8 @@ fclose($fd);
 ?>
 
 (((.)*<a(.)*title=\")((.)*)(\"(.)*>)((.)*)(<\/a>(.)*))+
+
+https://www.debuggex.com/#cheatsheet :
+((.*?<a.*?)(title="(.*)")?(.*?>)([^<]*).*(title="(.*)")?(</a>))+
+
+il manque la recherche après image.
