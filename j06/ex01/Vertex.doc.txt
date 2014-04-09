@@ -1,0 +1,17 @@
+<- Vertex ----------------------------------------------------------------------
+This class helps you stock the variables x, y, z ,and w into an encapsulation of
+coordinates. 
+it's easy to use:
+simply call the class using :
+$unitX = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $new
+Color( array( 'red' =>   0, 'green' =>   0, 'blue' => 255 ) ) );
+where
+	'x' represents the horizontal axis (obligated)
+	'y' represents the vertical axis(obligated)
+	'z' represents the depth(obligated)
+	'w' represents the Homogeneous coordinates coordinate (optional)
+
+for how to use the part 'color' check the doc of class color.
+as you can seeVertex takes an array as argument
+behavoir is undefined with neagative color values of values higher than 255
+---------------------------------------------------------------------- Vertex ->
