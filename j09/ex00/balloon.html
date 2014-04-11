@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>balloon</title>
+	<style type="text/css">
+	div#balloon {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		-webkit-border-radius: 200px;
+		-moz-border-radius: 200px;
+		border-radius: 200px;
+	}
+	</style>
+</head>
+<body>
+<div id="balloon" onclick="change_me()" onMouseOut="change_me_more()"></div>
+<script type="text/javascript">
+	function change_me() {
+		if (document.getElementById('balloon').style.backgroundColor == 'red')
+			document.getElementById('balloon').style.backgroundColor = 'green';
+		else if (document.getElementById('balloon').style.backgroundColor == 'green')
+			document.getElementById('balloon').style.backgroundColor = 'blue';
+		else
+			document.getElementById('balloon').style.backgroundColor = 'red';
+		document.getElementById('balloon').style.width=(parseInt(document.getElementById('balloon').clientWidth)+10)+'px';
+		document.getElementById('balloon').style.height=(parseInt(document.getElementById('balloon').clientHeight)+10)+'px';
+		document.getElementById('balloon').style.borderRadius=(parseInt(document.getElementById('balloon').clientHeight)+10)+'px';
+		document.getElementById('balloon').style.WebkitBorderRadius=(parseInt(document.getElementById('balloon').clientHeight)+10)+'px';
+		document.getElementById('balloon').style.MozBorderRadius=(parseInt(document.getElementById('balloon').clientHeight)+10)+'px';
+		if (parseInt(document.getElementById('balloon').clientWidth) > 420)
+		{
+			document.getElementById('balloon').style.width = '200px';
+			document.getElementById('balloon').style.height = '200px';
+		}
+	}
+
+	function change_me_more() {
+		if (document.getElementById('balloon').style.backgroundColor == 'red')
+			document.getElementById('balloon').style.backgroundColor = 'blue';
+		else if (document.getElementById('balloon').style.backgroundColor == 'green')
+			document.getElementById('balloon').style.backgroundColor = 'red';
+		else
+			document.getElementById('balloon').style.backgroundColor = 'green';
+		if (parseInt(document.getElementById('balloon').clientWidth) >= 205)
+		{
+			document.getElementById('balloon').style.width=(parseInt(document.getElementById('balloon').clientWidth)-5)+'px';
+		document.getElementById('balloon').style.height=(parseInt(document.getElementById('balloon').clientHeight)-5)+'px';
+		document.getElementById('balloon').style.borderRadius=(parseInt(document.getElementById('balloon').clientHeight)-5)+'px';
+		document.getElementById('balloon').style.WebkitBorderRadius=(parseInt(document.getElementById('balloon').clientHeight)-5)+'px';
+		document.getElementById('balloon').style.MozBorderRadius=(parseInt(document.getElementById('balloon').clientHeight)-5)+'px';
+		}
+	}
+</script>
+</body>
+</html>

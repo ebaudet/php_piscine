@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+</head>
+<body>
+	<input type="text" id="val1" name="val1" />
+	<select name="operateur" id="operateur">
+		<option value="addition" selected>+</option>
+		<option value="soustraction">-</option>
+		<option value="multiplication">*</option>
+		<option value="division">/</option>
+		<option value="modulo">%</option>
+	</select>
+	<input type="text" id="val2" name="val2" />
+	<input type="submit" id="OK" name="OK" value="Try me!" onclick="calcul()" />
+	<script type="text/javascript">
+		window.onload = function() {
+			time();
+		}
+		function time(){
+			alert("Please, use me...");
+			setTimeout("time()", 30000);
+		}
+		function isNumeric(input)
+		{
+			return (input - 0) == input && (''+input).replace(/^\s+|\s+$/g, "").length > 0;
+		}
+		function getSelectValue(selectId)
+		{
+			var selectElmt = document.getElementById(selectId);
+			return selectElmt.options[selectElmt.selectedIndex].value;
+		}
+		function calcul() {
+			var result;
+			var val1 = document.getElementById('val1').value;
+			var val2 = document.getElementById('val2').value;
+			var operateur = getSelectValue('operateur');
+			if (isNumeric(val1) && isNumeric(val2) && parseInt(val1) >= 0 && parseInt(val2) >= 0)
+			{
+				if (operateur == "addition")
+					result = parseInt(val1) + parseInt(val2);
+				else if (operateur == "soustraction")
+					result = parseInt(val1) - parseInt(val2);
+				else if (operateur == "multiplication")
+					result = parseInt(val1) * parseInt(val2);
+				else if (operateur == "division")
+				{
+					if (parseInt(val2) == 0)
+						result = "It’s over 9000!";
+					else
+						result = parseInt(val1) / parseInt(val2);
+				}
+				else if (operateur == "modulo")
+				{
+					if (parseInt(val2) == 0)
+						result = "It’s over 9000!";
+					else
+						result = parseInt(val1) % parseInt(val2);
+				}
+				else
+					result = "Error :(";
+			}
+			else
+			{
+				result = "Error :(";
+			}
+			console.log(result);
+			alert(result);
+		}
+	</script>
+</body>
+</html>
