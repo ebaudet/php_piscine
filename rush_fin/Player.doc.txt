@@ -1,0 +1,2 @@
+The Player class contains informations about the user. Like his login, password, the games he takes part in.
+It also checks his number of games he loses or wins.

@@ -1,0 +1,2 @@
+The MapObject class contains all the information you need about the objects on the playboard.
+Like the length, width or the position on the map.

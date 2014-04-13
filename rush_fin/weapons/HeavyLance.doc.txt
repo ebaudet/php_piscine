@@ -1,0 +1,6 @@
+<- HeavyLance -----------------------------------------------------------------
+Heavy Lance class
+
+Modify the values in order to change to potential of the heavy lance.
+You'll also have to check values in lance.class.php
+----------------------------------------------------------------- HeavyLance ->

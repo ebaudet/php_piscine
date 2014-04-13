@@ -1,0 +1,8 @@
+<- Weapon ---------------------------------------------------------------------
+
+The Weapon class is the architecture used fort any weapon.
+
+The weapon class contains all the information about the weapons used by the ships.
+Like the range, the amount of charge and the effect zone. 
+
+--------------------------------------------------------------------- Weapon ->

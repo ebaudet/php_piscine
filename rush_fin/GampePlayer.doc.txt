@@ -1,0 +1,1 @@
+The GamePlayer class contains information about the player in the current game, like his race and his types and number of Ships.

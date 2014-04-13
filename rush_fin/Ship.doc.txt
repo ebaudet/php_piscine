@@ -1,0 +1,2 @@
+The Ship class contains all the informations you need to know about the Ships on the playboard.
+Like the amount of PP, the shields points and the player who own the ship.

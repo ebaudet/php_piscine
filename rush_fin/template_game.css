@@ -1,0 +1,47 @@
+body {
+  background-color: #efefef;
+  background-image: url('http://www.nasa.gov/images/content/413779main_planetsys.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+
+table::before {
+  content:'THA WARGAME';
+  text-align : center;
+  color : #fff;
+  font-size: 36px;
+
+}
+
+
+table {
+  min-width: 1500px;
+  margin: 0 auto;
+  overflow:scroll;
+}
+
+.grid .row {
+  margin-left: 1px;
+}
+
+.grid .row:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.cell {
+  display: block;
+  float: left;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px solid #ccc;
+background-color: rgba(255, 225, 255, 0.3);
+  cursor: pointer;
+
+}

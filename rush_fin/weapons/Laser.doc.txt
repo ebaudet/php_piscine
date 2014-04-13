@@ -1,0 +1,6 @@
+<- Laser ----------------------------------------------------------------------
+Laser class
+
+Modify the values in order to change to potential of the laser.
+
+---------------------------------------------------------------------- Laser ->
